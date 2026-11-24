@@ -30,7 +30,7 @@ function nesteRunde(){
 
         }else if (regneTypeBestemmer === 2 && plusPå)
             {
-            regneTypeTegn = "-"
+            regneTypeTegn = "-";
             svar = tall1-tall2;
             regnestatus = false;
 
@@ -51,13 +51,13 @@ function nesteRunde(){
                         tall2 = Math.floor(Math.random()*9)+1;
                         svar = tall1/tall2;
                         continue
-                    }    
-                    regneTypeTegn = "÷"
+                    };
+                    regneTypeTegn = "÷";
                     regnestatus = false;
-                }
+                };
                 
-        }
+        };
         console.log("Stykke: " + tall1 + " "+ regneTypeTegn +" "+tall2)
         console.log("Svar: "+svar)
-    }
+    };
 }
