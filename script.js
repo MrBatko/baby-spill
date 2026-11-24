@@ -1,5 +1,9 @@
 let plusPå = true
 let minusPå = false
+let gangePå = false
+let delePå = true
+
+
 let regneTypeTegn;
 
 
@@ -21,43 +25,43 @@ function nesteRunde(){
     let regnestatus = true;
     while(regnestatus){
         let regneTypeBestemmer = Math.floor(Math.random()*4)+1;
-        console.log(regneTypeBestemmer);
+        // console.log(regneTypeBestemmer);
         if (regneTypeBestemmer === 1 && plusPå)
             {
             svar = tall1+tall2;
             regneTypeTegn = "+"
             regnestatus = false;
 
-        }else if (regneTypeBestemmer === 2 && plusPå)
+        }else if (regneTypeBestemmer === 2 && minusPå)
             {
             regneTypeTegn = "-";
             svar = tall1-tall2;
             regnestatus = false;
 
-        }else if (regneTypeBestemmer === 3 && plusPå)
+        }else if (regneTypeBestemmer === 3 && gangePå)
             {
             svar = tall1*tall2;
             regneTypeTegn = "×"
             regnestatus = false;
 
-        }else if (regneTypeBestemmer === 4 && plusPå)
+        }else if (regneTypeBestemmer === 4 && delePå)
             {
-                while(regnestatus)
+            while(regnestatus)
+                {
+                svar = tall1/tall2;
+                if (svar != Math.floor(svar) || !isFinite(svar))
                     {
+                    tall1 = Math.floor(Math.random()*9)+1;
+                    tall2 = Math.floor(Math.random()*9)+1;
                     svar = tall1/tall2;
-                    if (svar != Math.floor(svar) || !isFinite(svar))
-                        {
-                        tall1 = Math.floor(Math.random()*9)+1;
-                        tall2 = Math.floor(Math.random()*9)+1;
-                        svar = tall1/tall2;
-                        continue
-                    };
-                    regneTypeTegn = "÷";
-                    regnestatus = false;
+                    continue
                 };
+                regneTypeTegn = "÷";
+                regnestatus = false;
+            };
                 
         };
-        console.log("Stykke: " + tall1 + " "+ regneTypeTegn +" "+tall2)
-        console.log("Svar: "+svar)
     };
+    console.log("Stykke: " + tall1 + " "+ regneTypeTegn +" "+tall2)
+    console.log("Svar: "+svar)
 }
