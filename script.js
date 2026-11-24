@@ -9,9 +9,10 @@ let regneTypeTegn;
 
 
 
+
 let runde = 0
 let svar;
-start()
+// start()
 
 function start(){
     runde = 0
@@ -64,4 +65,8 @@ function nesteRunde(){
     };
     console.log("Stykke: " + tall1 + " "+ regneTypeTegn +" "+tall2)
     console.log("Svar: "+svar)
+
+    let element = document.getElementById("regneStykke");
+    
+    element.innerHTML =+ tall1 + " "+ regneTypeTegn +" "+tall2;
 }

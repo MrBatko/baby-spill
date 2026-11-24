@@ -5,6 +5,7 @@
 <title>Mattelek</title>
 </head>
 <body>
+    <script src="script.js"></script>
  
     <h1>Mattelek</h1>
  
@@ -35,15 +36,18 @@
  
     <hr>
  
-    <button>START!</button>
+    <button onclick="start()">START!</button>
  
     <h2>Oppgave</h2>
  
     <p>Tid: X</p>
  
-    <p>
-        X + X =
-<input type="number" id="svar">
+    
+    <label>
+        <label id="regneStykke">X + X = </label>
+        <input type="number" id="svar">
+    </label>
+        
 </p>
  
     <hr>
