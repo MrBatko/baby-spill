@@ -1,26 +1,92 @@
-
 <!DOCTYPE html>
-<html lang="no">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Mattelek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style src="styles.css"></style>
+ 
 </head>
 <body>
-
+    <script src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
     <h1>Mattelek</h1>
-
+ 
     <h2>Innstillinger</h2>
-
+ 
     <input type="checkbox" id="pluss">
-    <label for="pluss">Pluss</label>
-
+<label for="pluss">Pluss</label>
+ 
     <br>
-
+ 
     <input type="checkbox" id="minus">
-    <label for="minus">Minus</label>
-
+<label for="minus">Minus</label>
+ 
     <br>
+ 
+    <input type="checkbox" id="gange">
+<label for="gange">Gange</label>
+ 
+    <br>
+ 
+    <input type="checkbox" id="dele">
+<label for="dele">Dele</label>
+ 
+    <br><br>
+ 
+    <label for="runder">Antall runder:</label>
+<input type="number" id="runder">
+ 
+    <hr>
+ 
+    <button onclick="start()">START!</button>
+ 
+    <h2>Oppgave</h2>
+ 
+    <p>Tid: X</p>
+ 
+    
+    <label>
+        <label id="regneStykke">X + X = </label>
+        <input type="number" id="svar">
+    </label>
+        
+    <label>
+    <label id="regneStykke">X + X = </label>
+    <input type="number" id="svar">
+</label>
 
+<br><br>
+
+<button onclick="nesteOppgave()">Neste oppgave</button>
+</p>
+ 
+    <hr>
+ 
+    <h2>Ferdig!</h2>
+ 
+    <p>Din tid:</p>
+<input type="text" readonly>
+ 
+    <br><br>
+ 
+    <p>Antall riktig/feil:</p>
+ 
+    <label>Riktig:</label>
+<input type="text" readonly>
+ 
+    <label>Feil:</label>
+<input type="text" readonly>
+ 
+<script>
+var input = document.getElementById("svar");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    svar(document.getElementById("svar").value);
+  }
+});
+</script>
 
 </body>
 </html>
