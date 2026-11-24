@@ -69,5 +69,14 @@
     <label>Feil:</label>
 <input type="text" readonly>
  
+<script>
+var input = document.getElementById("svar");
+input.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    svar(document.getElementById("svar").value);
+  }
+});
+</script>
+
 </body>
 </html>
