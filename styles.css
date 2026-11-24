@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8e7;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+
+
+}
+
+h1 {
+    text-align: center;
+    color: #ff8fab;
+    font-size: 40px;
+}
+
+h2 {
+    color: #6ec6ff;
+    font-size: 22px;
+    border-bottom: 2px solid #ffd166;
+    padding-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin: 10px 8px 10px 0;
+    cursor: pointer;
+}
+
+label {
+    font-size: 18px;
+    cursor: pointer;
+}
