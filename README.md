@@ -1,2 +1,2 @@
 # baby-spill
-TEST
+dette er en test 

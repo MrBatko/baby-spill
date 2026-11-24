@@ -12,7 +12,8 @@ let regneTypeTegn;
 
 let runde;
 let svar;
-// start()
+start()
+testSvar(10)
 
 function start(){
     runde = 0;
@@ -20,8 +21,11 @@ function start(){
 }
 
 
-function svar(){
-    
+function testSvar(i){
+    if (svar === i){
+        console.log(i);
+        console.log(svar);
+    }
 }
 
 function nesteRunde(){
@@ -74,5 +78,5 @@ function nesteRunde(){
 
     let element = document.getElementById("regneStykke");
     
-    element.innerHTML =+ tall1 + " "+ regneTypeTegn +" "+tall2;
+    // element.innerHTML =+ tall1 + " "+ regneTypeTegn +" "+tall2;
 }

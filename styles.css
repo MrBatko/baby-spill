@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
+    background-color: #fff8e7;
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
@@ -10,13 +10,14 @@ body {
 
 h1 {
     text-align: center;
-    color: #2b6cb0;
-    font-size: 40px;
+    color: #ff8fab;
+    font-size: 40px; 
 }
 
 h2 {
+    color: #6ec6ff;
     font-size: 22px;
-    border-bottom: 2px solid #2b6cb0;
+    border-bottom: 2px solid #ffd166;
     padding-bottom: 5px;
 }
 
