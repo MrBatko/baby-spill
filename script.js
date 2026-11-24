@@ -10,16 +10,22 @@ let regneTypeTegn;
 
 
 
-let runde = 0
+let runde;
 let svar;
 // start()
 
 function start(){
-    runde = 0
+    runde = 0;
     nesteRunde()
 }
 
+
+function svar(){
+    
+}
+
 function nesteRunde(){
+    if (runde === undefined){return;}
     runde++
     let tall1 = Math.floor(Math.random()*9)+1;
     let tall2 = Math.floor(Math.random()*9)+1;
