@@ -13,7 +13,7 @@ let regneTypeTegn;
 let runde;
 let svar;
 start()
-testSvar(10)
+svarTest(10)
 
 function start(){
     runde = 0;
@@ -21,10 +21,11 @@ function start(){
 }
 
 
-function testSvar(i){
+function svarTest(i){
     if (svar === i){
         console.log(i);
         console.log(svar);
+        console.log("riktig svar")
     }
 }
 
